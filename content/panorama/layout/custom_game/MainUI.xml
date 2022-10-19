@@ -1,0 +1,51 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/mainui.css" />
+    </styles>
+    
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/mainui.js" />
+    </scripts>
+    
+    <Panel hittest="false" class="Root">
+
+		<Panel hittest="true" id="PetSelectionRoot">
+			<Panel class="RewardBody">
+				<Panel class="RewardBodyHeader">
+					<Panel id="EncounterTypeIcon" class="EncounterTypeIconReward">
+						<DOTAParticleScenePanel id="EncounterRewardParticleLegendary" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
+						<Panel id="EncounterRewardTypeImage" />
+						<DOTAParticleScenePanel id="EncounterRewardParticleLegendarySpark" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_sparks_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
+					</Panel>
+					<Label id="RewardHeader" text="#Select_Your_Pet" html="true" />
+				</Panel>
+				<Panel class="FixedRewardsCooldown">
+					<Panel class="RewardParticleContainer">
+						<DOTAParticleScenePanel id="RewardParticleBg" hittest="false" particleName="particles/agh_ability_selection_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="500 0 0" lookAt="0 -225 0" fov="60" squarePixels="true" />
+						<Panel class="RewardOptionDescriptionContainer">
+							<DOTAUIEconSetPreview class="RewardIconLegendary" hittest="false" hittestchildren="false" itemdef="13775" displaymode="loadout_small" drawbackground="true" renderdeferred="false" deferredalpha="true"/>
+							<Panel class="RewardsContentText">
+								<Label html="true" class="RewardName" text="#Cooldown_Pet" />
+								<Label html="true" class="RewardDescription" text="#Cooldown_Pet_Description" />
+							</Panel>
+							<TextButton id="ConfirmButton" text="Select" onactivate="CooldownPetButtonPressed()" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="FixedRewardsExperience">
+					<Panel class="RewardParticleContainer">
+						<DOTAParticleScenePanel id="RewardParticleBg" hittest="false" particleName="particles/agh_ability_selection_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="500 0 0" lookAt="0 -225 0" fov="60" squarePixels="true" />
+						<Panel class="RewardOptionDescriptionContainer">
+							<DOTAUIEconSetPreview class="RewardIconLegendary" hittest="false" hittestchildren="false" itemdef="11461" displaymode="loadout_small" drawbackground="true" renderdeferred="false" deferredalpha="true"/>
+							<Panel class="RewardsContentText">
+								<Label html="true" class="RewardName" text="#Experience_Pet" />
+								<Label html="true" class="RewardDescription" text="#Experience_Pet_Description" />
+							</Panel>
+							<TextButton id="ConfirmButton" text="Select" onactivate="ExperiencePetButtonPressed()" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

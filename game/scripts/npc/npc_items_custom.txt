@@ -1,0 +1,726 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Spider Legs - Valuable
+	//=================================================================================================================
+	"item_spider_legs_valuable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "AbilityTextureName" 			"item_spider_legs_valuable"
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"5"
+		"ItemShopTags"					"common"
+		"ItemQuality"					"common"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"0"
+        "ItemKillable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+        "ItemSellable"                  "1"
+		"ItemDroppable" 				"1"
+	}
+
+    //=================================================================================================================
+	// Blue Crystal - Valuable
+	//=================================================================================================================
+	"item_blue_crystal_valuable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "AbilityTextureName" 			"item_blue_crystal_valuable"
+		"Model"							"models/props_gameplay/rune_doubledamage01.vmdl"
+        "ModelScale"               		"1"
+
+		"UIDropSound" 					"Item.DropGemWorld"
+		"Effect" 						"particles/dotacraze/crystals/blue/blue_crystal_effect.vpcf"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"15"
+		"ItemShopTags"					"common"
+		"ItemQuality"					"common"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"0"
+        "ItemKillable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+        "ItemSellable"                  "1"
+		"ItemDroppable" 				"1"
+	}
+
+    //=================================================================================================================
+	// Purple Crystal - Valuable
+	//=================================================================================================================
+	"item_purple_crystal_valuable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "AbilityTextureName" 			"item_purple_crystal_valuable"
+		"Model"							"models/props_gameplay/rune_invisibility01.vmdl"
+        "ModelScale"               		"1"
+
+		"UIDropSound" 					"Item.DropGemWorld"
+		"Effect" 						"particles/dotacraze/crystals/purple/purple_crystal_effect.vpcf"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"15"
+		"ItemShopTags"					"common"
+		"ItemQuality"					"common"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"0"
+        "ItemKillable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+        "ItemSellable"                  "1"
+		"ItemDroppable" 				"1"
+	}
+
+    //=================================================================================================================
+	// Red Crystal - Valuable
+	//=================================================================================================================
+	"item_red_crystal_valuable"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_datadriven"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+        "AbilityTextureName" 			"item_red_crystal_valuable"
+		"Model"							"models/props_gameplay/rune_haste01.vmdl"
+        "ModelScale"               		"1"
+
+		"UIDropSound" 					"Item.DropGemWorld"
+		"Effect" 						"particles/dotacraze/crystals/red/red_crystal_effect.vpcf"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"15"
+		"ItemShopTags"					"common"
+		"ItemQuality"					"common"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"0"
+        "ItemKillable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE_STACKING"
+		"ItemPermanent"					"0"
+        "ItemSellable"                  "1"
+		"ItemDroppable" 				"1"
+	}
+
+    //============================================================
+	// Experience Pet - Common
+	//============================================================
+	"item_experience_pet_common"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/onibi_lvl_00/onibi_lvl_00.vmdl" 
+		"AbilityTextureName" 			"item_experience_pet_common"
+
+		"ItemCost" 						"0"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_experience_pet_common_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EXP_RATE_BOOST"					"5"
+				}
+			}
+		}
+	}
+
+	//============================================================
+	// Experience Pet - Rare
+	//============================================================
+	"item_experience_pet_rare"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/onibi_lvl_09/onibi_lvl_09.vmdl" 
+		"AbilityTextureName" 			"item_experience_pet_rare"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_experience_pet_rare_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EXP_RATE_BOOST"					"10"
+				}
+			}
+		}	
+	}
+
+	//============================================================
+	// Experience Pet - Mythical
+	//============================================================
+	"item_experience_pet_mythical"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/onibi_lvl_13/onibi_lvl_13.vmdl"
+		"AbilityTextureName" 			"item_experience_pet_mythical"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_experience_pet_mythical_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EXP_RATE_BOOST"					"15"
+				}
+			}
+		}		
+	}
+
+	//============================================================
+	// Experience Pet - Legendary
+	//============================================================
+	"item_experience_pet_legendary"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/onibi_lvl_20/onibi_lvl_20.vmdl"
+		"AbilityTextureName" 			"item_experience_pet_legendary"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_experience_pet_legendary_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EXP_RATE_BOOST"					"20"
+				}
+			}
+		}	
+	}
+
+	//============================================================
+	// Cooldown Pet - Common
+	//============================================================
+	"item_cooldown_pet_common"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl1/courier_ti10_radiant_lvl1.vmdl" 
+		"AbilityTextureName" 			"item_cooldown_pet_common"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"0"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_cooldown_pet_common_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"				"10"
+				}
+			}
+		}	
+	}
+
+	//============================================================
+	// Cooldown Pet - Rare
+	//============================================================
+	"item_cooldown_pet_rare"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl3/courier_ti10_radiant_lvl3.vmdl" 
+		"AbilityTextureName" 			"item_cooldown_pet_rare"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_cooldown_pet_rare_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"				"20"
+				}
+			}
+		}	
+	}
+
+	//============================================================
+	// Cooldown Pet - Mythical
+	//============================================================
+	"item_cooldown_pet_mythical"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl4/courier_ti10_radiant_lvl4.vmdl" 
+		"AbilityTextureName" 			"item_cooldown_pet_mythical"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_cooldown_pet_mythical_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"				"25"
+				}
+			}
+		}		
+	}
+
+	//============================================================
+	// Cooldown Pet - Legendary
+	//============================================================
+	"item_cooldown_pet_legendary"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl" 
+		"AbilityTextureName" 			"item_cooldown_pet_legendary"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_cooldown_pet_legendary_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"				"30"
+				}
+			}
+		}
+	}
+
+	//============================================================
+	// Aghanim Pet - Ancient
+	//============================================================
+	"item_aghanim_pet"
+	{
+		"BaseClass" 					"item_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Model"							"models/courier/aghanim_courier/aghanim_courier.vmdl" 
+		"AbilityTextureName" 			"item_aghanim_pet"
+		"ItemDroppable" 				"1"
+		"ItemKillable" 					"0" 
+		"ItemAlertable"					"1"
+		"ItemPermanent"					"1"
+		"ItemRequiresCharges"			"0"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ItemCost" 						"250"
+		"ItemSellable" 					"0"
+		"ItemPurchasable" 				"1"
+		"ItemStackable" 				"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"99999"
+		"ItemStockInitial"				"1"
+		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
+		"UIPickupSound" 				"Item.DropGemShop"
+		"UIDropSound" 					"Item.DropGemShop"
+		"Modifiers"
+		{
+			"item_aghanim_pet_modifier"
+			{
+				"Passive"				"1"
+				"IsHidden"				"1"
+				"Attributes"			"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"				"40"
+					"MODIFIER_PROPERTY_EXP_RATE_BOOST"					"25"
+				}
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Book of Strength
+	//=================================================================================================================
+	"item_book_of_strength"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+	
+		"Model"							"models/gameplay/attrib_tome_str.vmdl"
+		"skin" 							"1"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		"ItemCastOnPickup"				"1"
+
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_stat"			"3"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Book of Agility
+	//=================================================================================================================
+	"item_book_of_agility"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+																		
+		"Model"							"models/gameplay/attrib_tome_agi.vmdl"
+		"skin" 							"2"
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		"ItemCastOnPickup"				"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_stat"			"3"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Book of Intelligence
+	//=================================================================================================================
+	"item_book_of_intelligence"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"Model"							"models/gameplay/attrib_tome_int.vmdl"
+																																																																												 
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemPurchasable"				"0"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"1"
+		"ItemDisplayCharges"			"1"
+		"ItemCastOnPickup"				"1"
+
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_stat"			"3"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// RECIPES
+	//=================================================================================================================
+
+	"item_recipe_experience_pet_rare"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_experience_pet_rare"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_experience_pet_common;item_blue_crystal_valuable"
+		}
+	}
+
+	"item_recipe_experience_pet_mythical"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_experience_pet_mythical"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_experience_pet_rare;item_purple_crystal_valuable"
+		}
+	}
+
+	"item_recipe_experience_pet_legendary"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_experience_pet_legendary"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_experience_pet_mythical;item_red_crystal_valuable"
+		}
+	}
+
+	"item_recipe_cooldown_pet_rare"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_cooldown_pet_rare"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_cooldown_pet_common;item_blue_crystal_valuable"
+		}
+	}
+
+	"item_recipe_cooldown_pet_mythical"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_cooldown_pet_mythical"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_cooldown_pet_rare;item_purple_crystal_valuable"
+		}
+	}
+
+	"item_recipe_cooldown_pet_legendary"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"0"
+		"ItemResult"					"item_cooldown_pet_legendary"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_cooldown_pet_mythical;item_red_crystal_valuable"
+		}
+	}
+
+	"item_recipe_aghanim_pet"
+	{
+		"BaseClass"						"item_datadriven"
+		"ItemRecipe"					"1"
+		"ItemCost"						"1000"
+		"ItemResult"					"item_aghanim_pet"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"AbilityTextureName" 			"item_recipe_ultimate_scepter"
+		"ItemRequirements"
+		{
+			"01"						"item_experience_pet_legendary;item_cooldown_pet_legendary;item_blue_crystal_valuable;item_purple_crystal_valuable;item_red_crystal_valuable"
+		}
+	}
+}

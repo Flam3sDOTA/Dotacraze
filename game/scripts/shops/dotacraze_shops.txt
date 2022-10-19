@@ -1,0 +1,69 @@
+"dota_shops"
+{
+	"consumables"
+	{
+		"item"	"item_cooldown_pet_rare"
+		"item"	"item_cooldown_pet_mythical"
+		"item"	"item_cooldown_pet_legendary"
+		"item"	"item_experience_pet_rare"
+		"item"	"item_experience_pet_mythical"
+		"item"	"item_experience_pet_legendary"
+	}
+
+	"attributes"
+	{
+	}
+
+	"weapons_armor"
+	{
+		"item"	"item_aghanim_pet"
+	}
+			
+	"misc"
+	{	
+	}	
+	
+	"basics"
+	{						
+	}
+
+	"support"
+	{
+	}
+				
+	"magics"			
+	{
+	}
+		
+	"defense"
+	{	
+	}
+			
+	"weapons"
+	{				
+	}
+					
+	"artifacts"
+	{			
+	}
+
+	"sideshop1"
+	{
+	}
+
+	"sideshop2"
+	{
+	}
+	
+	"secretshop"
+	{							
+	}
+
+	"pregame"
+	{
+	}
+
+	"common_items"
+	{
+	}
+}

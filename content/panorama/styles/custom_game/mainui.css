@@ -1,0 +1,399 @@
+.Root {
+    width: 100%;
+    height: 100%;
+}
+
+#PetSelectionRoot {
+	width: 900px;
+    height: 430px;
+	flow-children: none;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #48495C ), color-stop(0.5, #30313D ), to( #1B1B21 ) );
+    border-right: 1px solid #30313D;
+    border-left: 1px solid #30313D;
+    border-bottom: 1px solid #30313D;
+    box-shadow: fill 0px 8px 48px #000000BB;
+    overflow: noclip;
+	align: center center;
+
+    background-image: url( "s2r://panorama/images/interface/aghanims__icon_stone_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+    animation-name: AghanimRewardsHUDopen;
+    opacity: 1;
+    visibility: collapse;
+}
+
+.hidden {
+    visibility: collapse;
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+
+@keyframes 'AghanimRewardsHUDclose' {
+    0%{
+
+  opacity: 1;
+  brightness: 1;
+  pre-transform-scale2d: 1;
+  transform: translateY(0px);
+    }
+    100%{
+
+  opacity: 0;
+  brightness: 0;
+  pre-transform-scale2d: .95;
+  transform: translateY(150px);
+    }
+}
+
+@keyframes 'AghanimRewardsHUDopen' {
+
+    0%{
+
+  opacity: 0;
+  pre-transform-scale2d: 1.2;
+    }
+    100%{
+
+  opacity: 1;
+  pre-transform-scale2d: 1;
+    }
+}
+
+.RewardBody {
+
+    position: 0 50px 0 0;
+    width: 100%;
+    height: fit-children;
+    flow-children: down;
+   }
+  
+.RewardBodyHeader {
+    flow-children: right;
+    width: 100%;
+    height: 42px;
+    horizontal-align: center;
+    overflow: noclip;
+}
+
+.EncounterTypeIconReward {
+    flow-children: none;
+  
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url( "s2r://panorama/images/events/aghanim/aghanims_room_icon_png.vtex");
+  
+    width: 107px;
+    height: 124px;
+  
+    vertical-align: top;
+  
+    margin-top: -72px;
+    margin-left: 24px;
+  
+    img-shadow: 0 4px 8px 1.5 #000;
+}
+
+#EncounterRewardParticleLegendary {
+    height: 100%;
+    width: 100%;
+    opacity-mask: url( "s2r://panorama/images/masks/softedge_circle_sharp_png.vtex");
+}
+
+#EncounterRewardTypeImage {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url( "s2r://panorama/images/interface/aghanims_reward_staff_psd.vtex");
+  
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#EncounterRewardParticleLegendarySpark {
+    height: 100%;
+    width: 100%;
+    opacity-mask: url( "s2r://panorama/images/masks/softedge_circle_sharp_png.vtex");
+}
+
+#RewardHeader {
+
+    margin: 0px;
+    vertical-align: top;
+    horizontal-align: center;
+    text-transform: uppercase;
+    font-weight: semi-bold;
+    letter-spacing: 1px;
+    font-size: 35px;
+    text-align: center center;
+    transform: translateX(-132px);
+
+    box-shadow: fill 1px 2px 24px #00000030;
+
+    text-shadow: 0px 3px 4px #000000;
+    color: gradient( linear, 0% 0%, 0% 100%, from( #fff7e8 ), to( #fff7e8 ) );
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #79570000 ), color-stop (0.1, #2234CE), color-stop (0.77, #2234CE), to ( #FFF26F00 ) );
+    width: 50%;
+    height: 100%;
+
+    margin-top: -20px;
+}
+
+.FixedRewardsCooldown {
+    horizontal-align: center;
+    flow-children: right;
+    text-align: center;
+    width: 100%;
+  
+    padding: 5px 5px;
+  
+    background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin-top: 15px;
+}
+
+.FixedRewardsExperience {
+    horizontal-align: center;
+    flow-children: right;
+    text-align: center;
+    width: 100%;
+  
+    padding: 5px 5px;
+  
+    background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin-top: 15px;
+}
+
+.RewardParticleContainer {
+
+    flow-children: none;
+    position: 0.0px 0.0px 0.0px;
+    width: 100%;
+    margin: 0px 0;
+  
+    border: 0px transparent white;
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #19191f ), color-stop(0.7, #0f0f11aa), to( #0f0f1100 ) );
+  
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+  
+    padding: 0px 0;
+}
+
+#RewardParticleBg {
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+  
+    width: 100%;
+    height: 128px;
+    margin: 0 0;
+}
+
+.RewardOptionDescriptionContainer {
+    flow-children: right;
+    width: 100%;
+    height: 128px;
+    vertical-align: center;
+}
+.RewardOptionContainer > Label {
+    horizontal-align: center;
+    text-align: center;
+}
+
+.RewardIconLegendary {
+    width: 200px;
+    height: 110px;
+    vertical-align: top;
+    horizontal-align: left;
+    vertical-align: middle;
+    background-image: none;
+  
+    margin-left: 12px;
+  
+    brightness: .65;
+
+    border: 2px solid #7f7e81;
+    box-shadow: 0 0 12px 0px #7f7e81;
+  
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  
+    animation-name: LegendaryPulse;
+
+}
+
+@keyframes 'LegendaryPulse'{
+
+    0%{
+
+  brightness: 1;
+  border: 2px solid #7f7e81;
+  box-shadow: 0 0 12px 0px #132092;
+    }
+    100%{
+
+  brightness: 1.3;
+  border: 2px solid #c6c4ca;
+  box-shadow: 0 0 16px 1px #2234CE;
+    }
+}
+
+.RewardIconElite {
+    width: 200px;
+    height: 110px;
+    vertical-align: top;
+    horizontal-align: left;
+    vertical-align: middle;
+    background-image: none;
+  
+    margin-left: 12px;
+  
+    brightness: .65;
+
+    border: 2px solid #ffafbe;
+    box-shadow: 0 0 12px 0px #fb1515;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  
+    animation-name: ElitePulse;
+}
+
+@keyframes 'ElitePulse'{
+
+    0%{
+
+  brightness: 1;
+  border: 2px solid #f45573;
+  box-shadow: 0 0 12px 0px #fb1515;
+    }
+    100%{
+
+  brightness: 1.5;
+  border: 2px solid #f37f95;
+  box-shadow: 0 0 16px 1px #fb1515;
+    }
+}
+
+.RewardsContentText {
+    flow-children: down;
+    vertical-align: middle;
+    width: 40%;
+  
+    margin-left: 24px;
+}
+
+.RewardName {
+    font-size: 21px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: semibold;
+    letter-spacing: 2px;
+    vertical-align: center;
+  
+    margin-bottom: 4px;
+}
+  
+.RewardDescription {
+    color: #ccc;
+    font-size: 16px;
+    horizontal-align: left;
+    text-align: left;
+    width: 540px;
+}
+
+#ConfirmButton {
+    visibility: visible;
+    vertical-align: center;
+    horizontal-align: center;
+    box-shadow: fill 0 2px 8px #000000DD;
+    background-color: gradient( radial, 50% 50%, 0% 0%, 50% 100%, from( #48495CDD ), to( #323342DD ) );
+  
+    background-image: url( "s2r://panorama/images/interface/confirm_button_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    transition-property: box-shadow, background-color;
+    transition-delay: 0s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+  
+    border-radius: 6px;
+  
+    min-width: 130px;
+    height: 40px;
+}
+  
+#ConfirmButton:hover {
+    box-shadow: fill 0 0px 6px #acdef175;
+    background-color: gradient( radial, 50% 50%, 0% 0%, 75% 150%, from( #5a5b79FF ), to( #404367FF ) );
+  
+    brightness: 2;
+  
+    transition-property: box-shadow, background-color;
+    transition-delay: 0s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+  
+#ConfirmButton:active {
+  
+    box-shadow: fill 0 2px 8px #000000DD;
+    background-color: gradient( radial, 50% 50%, 0% 0%, 50% 100%, from( #323342DD ), to( #272835DD ) );
+  
+    transition-property: box-shadow, background-color;
+    transition-delay: 0s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+  
+#ConfirmButton Label {
+    text-align: center;
+    vertical-align: center;
+    horizontal-align: center;
+  
+    margin: 0px;
+    vertical-align: middle;
+    horizontal-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 14px;
+    text-align: center center;
+    width: 100%;
+  
+    text-shadow: 1px 3px 4px #000;
+  
+    transition-property: text-shadow;
+    transition-delay: 0s;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}

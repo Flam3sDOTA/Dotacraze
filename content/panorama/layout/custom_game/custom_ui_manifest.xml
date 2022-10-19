@@ -1,0 +1,53 @@
+<root>
+    <script>
+        GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_HEROES, false );
+        GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_FLYOUT_SCOREBOARD, false );
+        GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PROTECT, false );
+        GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_SHOP_SUGGESTEDITEMS, false );
+		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ACTION_MINIMAP, false );
+		
+        var NoGlyphAndRadar = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("minimap_container");
+        var NoScoreboardButton = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("MenuButtons");
+        var NoKillCam = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
+		var NoTPScrollUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("center_with_stats").FindChildTraverse("center_block");
+		var NoCourierControl = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("quickbuy").FindChildTraverse("ShopCourierControls");
+		var NoDayNightIndicator = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("TimeOfDay");
+		var NoDayNightIndicator2 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("topbar");
+		var NoDayNightIndicator3 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("topbar");
+		var NoDayNightIndicator4 = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("topbar");
+		var GameTimeAdjustment = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("TimeOfDay");
+		var NoAllNeutralItemsButton = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements").FindChildTraverse("shop").FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridMainShopContents").FindChildTraverse("GridNeutralsCategory");
+
+        NoGlyphAndRadar.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
+        NoScoreboardButton.FindChildTraverse("ToggleScoreboardButton").style.visibility = "collapse";
+        NoKillCam.FindChildTraverse("KillCam").style.visibility = "collapse";
+		NoTPScrollUI.FindChildTraverse("inventory_tpscroll_container").style.visibility = "collapse";
+		NoCourierControl.FindChildTraverse("courier").style.visibility = "collapse";
+		NoDayNightIndicator.FindChildTraverse("DayNightCycle").style.visibility = "collapse";
+		NoDayNightIndicator2.FindChildTraverse("DayGlow").style.visibility = "collapse";
+		NoDayNightIndicator3.FindChildTraverse("NightGlow").style.visibility = "collapse";
+		NoDayNightIndicator4.FindChildTraverse("TimeUntil").style.visibility = "collapse";
+		GameTimeAdjustment.FindChildTraverse("GameTime").style.margin = "8px";
+		GameTimeAdjustment.FindChildTraverse("GameTime").style.fontSize = "22px";
+		NoAllNeutralItemsButton.FindChildTraverse("ViewAllButton").style.visibility = "collapse";
+
+
+		GameUI.CustomUIConfig().team_colors = {}
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#cc2727;"; // { 178, 34, 34 }		--		Red
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "#0ba30b;"; // { 0, 100, 0 }		--		Green
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] = "#259ef5;"; // { 30, 144, 225 }	--		Blue
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#e3e332;"; // { 212, 212, 37 }	--		Yellow
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#ffffff;"; // { 0, 0, 0 }	--
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#ffffff;"; // { 0, 0, 0 }	--
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "#ffffff;"; // { 0, 0, 0 }	--		
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "#ffffff;"; // { 0, 0, 0 }	--		
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "#ffffff;"; // { 0, 0, 0 }	--		
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "#ffffff;"; // { 0, 0, 0 }	--		
+    </script>
+    <scripts>
+	</scripts>
+    
+    <Panel>
+		<CustomUIElement type="Hud"                 layoutfile="file://{resources}/layout/custom_game/MainUI.xml" />
+    </Panel>
+</root>
