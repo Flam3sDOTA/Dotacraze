@@ -47,5 +47,66 @@
 				</Panel>
 			</Panel>
 		</Panel>
+
+		<Panel hittest="true" id="SecondAbilitySelectionRoot">
+			<Panel class="RewardBody">
+				<Panel class="RewardBodyHeader">
+					<Panel id="EncounterTypeIcon" class="EncounterTypeIconReward">
+						<DOTAParticleScenePanel id="EncounterRewardParticleLegendary" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
+						<Panel id="EncounterRewardTypeImage" />
+						<DOTAParticleScenePanel id="EncounterRewardParticleLegendarySpark" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_sparks_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
+					</Panel>
+					<Label id="RewardHeader" text="#Select_Your_Ability" html="true" />
+				</Panel>
+				<Panel class="FixedRewardsAbility1">
+					<Panel class="RewardParticleContainer">
+						<DOTAParticleScenePanel id="RewardParticleBg2" hittest="false" particleName="particles/agh_ability_selection_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="500 0 0" lookAt="0 -225 0" fov="60" squarePixels="true" />
+						<Panel class="RewardOptionDescriptionContainer">
+							<DOTAAbilityImage abilityname="centaur_warrunner_hoof_stomp_lua" id="RewardAbilityImage" class="RewardIconAbility" showtooltip="true" />
+							<Panel class="RewardsContentText">
+								<Label html="true" class="RewardName" text="#Ability1Name" />
+								<Label html="true" class="RewardDescription" text="#Ability1Description" />
+							</Panel>
+							<TextButton id="ConfirmButton" text="Select" onactivate="Ability1Selected()" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="FixedRewardsAbility2">
+					<Panel class="RewardParticleContainer">
+						<DOTAParticleScenePanel id="RewardParticleBg2" hittest="false" particleName="particles/agh_ability_selection_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="500 0 0" lookAt="0 -225 0" fov="60" squarePixels="true" />
+						<Panel class="RewardOptionDescriptionContainer">
+							<DOTAAbilityImage abilityname="enchantress_natures_attendants_lua" id="RewardAbilityImage" class="RewardIconAbility" showtooltip="true" />
+							<Panel class="RewardsContentText">
+								<Label html="true" class="RewardName" text="#Ability2Name" />
+								<Label html="true" class="RewardDescription" text="#Ability2Description" />
+							</Panel>
+							<TextButton id="ConfirmButton" text="Select" onactivate="Ability2Selected()" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="FixedRewardsAbility3">
+					<Panel class="RewardParticleContainer">
+						<DOTAParticleScenePanel id="RewardParticleBg2" hittest="false" particleName="particles/agh_ability_selection_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="500 0 0" lookAt="0 -225 0" fov="60" squarePixels="true" />
+						<Panel class="RewardOptionDescriptionContainer">
+							<DOTAAbilityImage abilityname="alchemist_acid_spray_lua" id="RewardAbilityImage" class="RewardIconAbility" showtooltip="true" />
+							<Panel class="RewardsContentText">
+								<Label html="true" class="RewardName" text="#Ability3Name" />
+								<Label html="true" class="RewardDescription" text="#Ability3Description" />
+							</Panel>
+							<TextButton id="ConfirmButton" text="Select" onactivate="Ability3Selected()" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+
+
+
+
+
+
+
+
+
 	</Panel>
 </root>

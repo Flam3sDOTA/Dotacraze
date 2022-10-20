@@ -157,4 +157,8 @@ function dotacraze:InitGameMode()
 	-- Custom Events
 	CustomGameEventManager:RegisterListener('CooldownPetButtonPressed', CooldownPetEvent)
 	CustomGameEventManager:RegisterListener('ExperiencePetButtonPressed', ExperiencePetEvent)
+
+	CustomGameEventManager:RegisterListener('Ability1Selected', AbilityEvent1)
+	CustomGameEventManager:RegisterListener('Ability2Selected', AbilityEvent2)
+	CustomGameEventManager:RegisterListener('Ability3Selected', AbilityEvent3)
 end

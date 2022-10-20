@@ -29,12 +29,18 @@ g_ParticlePrecache =
 	-- Ability Related
 	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit_creep.vpcf",
 	"particles/units/heroes/hero_bristleback/bristleback_quill_spray.vpcf",
+	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit.vpcf",
+	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_impact.vpcf",
 	"particles/abilities/aghanims_attendants/aghanims_attendants.vpcf",
 	"particles/units/heroes/hero_enchantress/enchantress_natures_attendants_count8.vpcf",
 
 	"particles/generic_gameplay/generic_stunned.vpcf",
 	"particles/agh_ability_selection_ambient.vpcf_c",
 	"particles/agh_ability_selection_elite_ambient.vpcf_c",
+
+	"particles/units/heroes/hero_alchemist/alchemist_acid_spray.vpcf",
+	"particles/units/heroes/hero_alchemist/alchemist_acid_spray_debuff.vpcf",
+	"particles/units/heroes/hero_centaur/centaur_warstomp.vpcf",
 }
 
 g_ParticleFolderPrecache =
@@ -71,4 +77,6 @@ g_SoundPrecache =
 
 	-- Ability Related
 	"soundevents/game_sounds_heroes/game_sounds_bristleback.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_centaur.vsndevts",
 }

@@ -1,6 +1,20 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
+
+	//=================================================================================================================
+	// Empty Ability
+	//=================================================================================================================
+	"empty"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"                     "ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"						"0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+	}
+
 	//=================================================================================================================
 	// Bristleback: Quill Spray (Lua version)
 	// Credits: https://github.com/Elfansoer/dota-2-lua-abilities

@@ -64,6 +64,12 @@ end
 ---------------------------------------------------------------------------
 function dotacraze:OnPlayerGainedLevel(eventInfo)
   local hero = PlayerResource:GetSelectedHeroEntity(eventInfo.player_id)
+
+  if eventInfo.level == 2 then
+    CustomGameEventManager:Send_ServerToAllClients("player_reached_secondability_level", {})
+    hero:AddNewModifier(hero, nil, "modifier_frozen", {})
+  end
+
   if eventInfo.level == 5 then
     hero:SetModel("models/heroes/aghanim/aghanim_model.vmdl")
     hero:SetOriginalModel("models/heroes/aghanim/aghanim_model.vmdl")
@@ -120,5 +126,33 @@ function ExperiencePetEvent(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
   hero:AddItemByName("item_experience_pet_common")
+  hero:RemoveModifierByName("modifier_frozen")
+end
+
+
+
+
+
+---------------------------------------------------------------------------
+-- Custom Event: Abilities
+---------------------------------------------------------------------------
+function AbilityEvent1(eventSourceIndex, args)
+  local playerID = args.PlayerID
+  local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  hero:AddAbility("centaur_warrunner_hoof_stomp_lua")
+  hero:RemoveModifierByName("modifier_frozen")
+end
+
+function AbilityEvent2(eventSourceIndex, args)
+  local playerID = args.PlayerID
+  local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  hero:AddAbility("enchantress_natures_attendants_lua")
+  hero:RemoveModifierByName("modifier_frozen")
+end
+
+function AbilityEvent3(eventSourceIndex, args)
+  local playerID = args.PlayerID
+  local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  hero:AddAbility("alchemist_acid_spray_lua")
   hero:RemoveModifierByName("modifier_frozen")
 end

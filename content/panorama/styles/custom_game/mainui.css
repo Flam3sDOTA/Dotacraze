@@ -397,3 +397,131 @@
     transition-duration: .2s;
     transition-timing-function: ease-in;
 }
+
+
+
+
+
+#SecondAbilitySelectionRoot {
+	width: 900px;
+    height: 570px;
+	flow-children: none;
+    background-color: gradient( linear, 0% 0%, 0% 100%, from( #48495C ), color-stop(0.5, #30313D ), to( #1B1B21 ) );
+    border-right: 1px solid #30313D;
+    border-left: 1px solid #30313D;
+    border-bottom: 1px solid #30313D;
+    box-shadow: fill 0px 8px 48px #000000BB;
+    overflow: noclip;
+	align: center center;
+
+    background-image: url( "s2r://panorama/images/interface/aghanims__icon_stone_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    animation-duration: .4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+    animation-name: AghanimRewardsHUDopen;
+    opacity: 1;
+
+    visibility: collapse;
+}
+
+.FixedRewardsAbility1 {
+    horizontal-align: center;
+    flow-children: right;
+    text-align: center;
+    width: 100%;
+  
+    padding: 5px 5px;
+  
+    background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin-top: 15px;
+}
+
+.FixedRewardsAbility2 {
+    horizontal-align: center;
+    flow-children: right;
+    text-align: center;
+    width: 100%;
+  
+    padding: 5px 5px;
+  
+    background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin-top: 15px;
+}
+
+.FixedRewardsAbility3 {
+    horizontal-align: center;
+    flow-children: right;
+    text-align: center;
+    width: 100%;
+  
+    padding: 5px 5px;
+  
+    background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    margin-top: 15px;
+}
+
+.RewardIconAbility {
+    width: 110px;
+    height: 110px;
+    vertical-align: top;
+    horizontal-align: left;
+    vertical-align: middle;
+    background-image: none;
+    margin-left: 12px;
+    brightness: .65;
+    tooltip-position: left;
+    border: 2px solid black;
+}
+
+#RewardParticleBg2 {
+    width: 110px;
+    height: 110px;
+    vertical-align: top;
+    horizontal-align: left;
+    vertical-align: middle;
+    background-image: none;
+
+    margin-left: 12px;
+
+    brightness: .65;
+
+    border: 2px solid #4b69ff;
+    box-shadow: 0 0 12px 0px #4b69ff;
+  
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  
+    animation-name: AbilityPulse;
+}
+
+@keyframes 'AbilityPulse' {
+
+    0%{
+
+  brightness: 1;
+  border: 2px solid #4b69ff;
+  box-shadow: 0 0 12px 0px #4b69ff;
+    }
+    100%{
+
+  brightness: 1.5;
+  border: 2px solid #4b69ff;
+  box-shadow: 0 0 16px 1px #4b69ff;
+    }
+}
