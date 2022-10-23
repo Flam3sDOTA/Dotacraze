@@ -131,7 +131,7 @@
 		"AbilityTextureName" 			"item_experience_pet_common"
 
 		"ItemCost" 						"0"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -148,6 +148,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_experience_pet.lua"
+				"Function"		"ExperiencePetCommon"
+			}
+		}
 		"Modifiers"
 		{
 			"item_experience_pet_common_modifier"
@@ -172,7 +180,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/onibi_lvl_09/onibi_lvl_09.vmdl" 
 		"AbilityTextureName" 			"item_experience_pet_rare"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -214,7 +222,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/onibi_lvl_13/onibi_lvl_13.vmdl"
 		"AbilityTextureName" 			"item_experience_pet_mythical"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -256,7 +264,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/onibi_lvl_20/onibi_lvl_20.vmdl"
 		"AbilityTextureName" 			"item_experience_pet_legendary"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -298,7 +306,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl1/courier_ti10_radiant_lvl1.vmdl" 
 		"AbilityTextureName" 			"item_cooldown_pet_common"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -316,6 +324,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_cooldown_pet.lua"
+				"Function"		"CooldownPetCommon"
+			}
+		}
 		"Modifiers"
 		{
 			"item_cooldown_pet_common_modifier"
@@ -340,7 +356,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl3/courier_ti10_radiant_lvl3.vmdl" 
 		"AbilityTextureName" 			"item_cooldown_pet_rare"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -382,7 +398,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl4/courier_ti10_radiant_lvl4.vmdl" 
 		"AbilityTextureName" 			"item_cooldown_pet_mythical"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -424,7 +440,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl" 
 		"AbilityTextureName" 			"item_cooldown_pet_legendary"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"
@@ -466,7 +482,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Model"							"models/courier/aghanim_courier/aghanim_courier.vmdl" 
 		"AbilityTextureName" 			"item_aghanim_pet"
-		"ItemDroppable" 				"1"
+		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
 		"ItemAlertable"					"1"
 		"ItemPermanent"					"1"

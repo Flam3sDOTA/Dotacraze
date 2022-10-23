@@ -21,18 +21,9 @@ end
 -- Event: OnHeroInGame
 ---------------------------------------------------------------------------
 function dotacraze:OnHeroInGame(hero)
+  CustomGameEventManager:Send_ServerToAllClients("player_reached_pet_level", {})
+  hero:AddNewModifier(hero, nil, "modifier_frozen", {})
   hero:AddNewModifier(hero, nil, "modifier_auto_cast", {})
-
-  local abilities = {
-    "bristleback_quill_spray_lua"
-  }
-
-  for i = 1, #abilities do
-  local current_ability = hero:FindAbilityByName(abilities[i])
-    if current_ability then
-      current_ability:SetLevel(1)
-    end
-  end 
 
   local playerID = hero:GetPlayerID()	
 	PlayerResource:SetCameraTarget(playerID, hero)
@@ -80,8 +71,6 @@ function dotacraze:OnPlayerGainedLevel(eventInfo)
     hero:SetModel("models/heroes/aghanim_barbarian/aghanim_barbarian.vmdl")
     hero:SetOriginalModel("models/heroes/aghanim_barbarian/aghanim_barbarian.vmdl")
     local particle = ParticleManager:CreateParticle( "particles/econ/events/fall_2021/hero_levelup_fall_2021.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-    CustomGameEventManager:Send_ServerToAllClients("player_reached_pet_level", {})
-    hero:AddNewModifier(hero, nil, "modifier_frozen", {})
   end
 
   if eventInfo.level == 15 then
@@ -115,7 +104,8 @@ end
 function CooldownPetEvent(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
-  hero:AddItemByName("item_cooldown_pet_common")
+  local cooldown_pet = hero:AddItemByName("item_cooldown_pet_common")
+  cooldown_pet:SetOwner(hero)
   hero:RemoveModifierByName("modifier_frozen")
 end
 
@@ -125,13 +115,10 @@ end
 function ExperiencePetEvent(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
-  hero:AddItemByName("item_experience_pet_common")
+  local experience_pet = hero:AddItemByName("item_experience_pet_common")
+  experience_pet:SetOwner(hero)
   hero:RemoveModifierByName("modifier_frozen")
 end
-
-
-
-
 
 ---------------------------------------------------------------------------
 -- Custom Event: Abilities

@@ -17,6 +17,7 @@ g_ModelPrecache =
 	"models/courier/aghanim_courier/aghanim_courier.vmdl", -- Aghanim, the Courier
 	"models/courier/aghanim_courier/aghanim_courier_flying.vmdl", -- Aghanim, the Bird
 	"models/creeps/roshan_aghanim/roshan_aghanim.vmdl", -- Aghanim, the Roshan
+	"models/items/courier/onibi_lvl_00/onibi_lvl_00.vmdl",
 }
 
 g_ParticlePrecache =
