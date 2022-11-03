@@ -12,11 +12,7 @@
 		<Panel hittest="true" id="PetSelectionRoot">
 			<Panel class="RewardBody">
 				<Panel class="RewardBodyHeader">
-					<Panel id="EncounterTypeIcon" class="EncounterTypeIconReward">
-						<DOTAParticleScenePanel id="EncounterRewardParticleLegendary" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
-						<Panel id="EncounterRewardTypeImage" />
-						<DOTAParticleScenePanel id="EncounterRewardParticleLegendarySpark" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_sparks_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
-					</Panel>
+					<Panel id="EncounterTypeIcon" class="EncounterTypeIconReward" />
 					<Label id="RewardHeader" text="#Select_Your_Pet" html="true" />
 				</Panel>
 				<Panel class="FixedRewardsCooldown">
@@ -51,12 +47,8 @@
 		<Panel hittest="true" id="SecondAbilitySelectionRoot">
 			<Panel class="RewardBody">
 				<Panel class="RewardBodyHeader">
-					<Panel id="EncounterTypeIcon" class="EncounterTypeIconReward">
-						<DOTAParticleScenePanel id="EncounterRewardParticleLegendary" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
-						<Panel id="EncounterRewardTypeImage" />
-						<DOTAParticleScenePanel id="EncounterRewardParticleLegendarySpark" hittest="false" particleName="particles/ui/ui_aghs_menu_legendary_sparks_ambient.vpcf" particleonly="true" startActive="true" cameraOrigin="75 0 0" lookAt="0 0 0" fov="60" squarePixels="true" />
-					</Panel>
-					<Label id="RewardHeader" text="#Select_Your_Ability" html="true" />
+					<Panel id="EncounterTypeIcon" class="EncounterTypeIconRewardAbility" />
+					<Label id="RewardHeaderAbility" text="#Select_Your_Ability" html="true" />
 				</Panel>
 				<Panel class="FixedRewardsAbility1">
 					<Panel class="RewardParticleContainer">

@@ -11,7 +11,7 @@
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
         "AbilityTextureName" 			"item_spider_legs_valuable"
-		"Model"							"models/props_gameplay/red_box.vmdl"
+		"Model"							"models/treasure.vmdl"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -198,6 +198,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_experience_pet.lua"
+				"Function"		"ExperiencePetRare"
+			}
+		}
 		"Modifiers"
 		{
 			"item_experience_pet_rare_modifier"
@@ -240,6 +248,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_experience_pet.lua"
+				"Function"		"ExperiencePetMythical"
+			}
+		}
 		"Modifiers"
 		{
 			"item_experience_pet_mythical_modifier"
@@ -282,6 +298,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_experience_pet.lua"
+				"Function"		"ExperiencePetLegendary"
+			}
+		}
 		"Modifiers"
 		{
 			"item_experience_pet_legendary_modifier"
@@ -304,7 +328,7 @@
 	{
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl1/courier_ti10_radiant_lvl1.vmdl" 
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl1/courier_ti10_radiant_lvl1.vmdl"
 		"AbilityTextureName" 			"item_cooldown_pet_common"
 		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
@@ -354,7 +378,7 @@
 	{
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl3/courier_ti10_radiant_lvl3.vmdl" 
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl3/courier_ti10_radiant_lvl3.vmdl"
 		"AbilityTextureName" 			"item_cooldown_pet_rare"
 		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
@@ -374,6 +398,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_cooldown_pet.lua"
+				"Function"		"CooldownPetRare"
+			}
+		}
 		"Modifiers"
 		{
 			"item_cooldown_pet_rare_modifier"
@@ -396,7 +428,7 @@
 	{
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl4/courier_ti10_radiant_lvl4.vmdl" 
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl4/courier_ti10_radiant_lvl4.vmdl"
 		"AbilityTextureName" 			"item_cooldown_pet_mythical"
 		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
@@ -416,6 +448,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_cooldown_pet.lua"
+				"Function"		"CooldownPetMythical"
+			}
+		}
 		"Modifiers"
 		{
 			"item_cooldown_pet_mythical_modifier"
@@ -438,7 +478,7 @@
 	{
 		"BaseClass" 					"item_datadriven"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl" 
+		"Model"							"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl"
 		"AbilityTextureName" 			"item_cooldown_pet_legendary"
 		"ItemDroppable" 				"0"
 		"ItemKillable" 					"0" 
@@ -458,6 +498,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_cooldown_pet.lua"
+				"Function"		"CooldownPetLegendary"
+			}
+		}
 		"Modifiers"
 		{
 			"item_cooldown_pet_legendary_modifier"
@@ -500,6 +548,14 @@
 		"ItemShareability" 				"ITEM_NOT_SHAREABLE"	
 		"UIPickupSound" 				"Item.DropGemShop"
 		"UIDropSound" 					"Item.DropGemShop"
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/item_aghanim_pet.lua"
+				"Function"		"AghanimPetAncient"
+			}
+		}
 		"Modifiers"
 		{
 			"item_aghanim_pet_modifier"

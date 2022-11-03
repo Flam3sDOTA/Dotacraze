@@ -89,18 +89,38 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url( "s2r://panorama/images/events/aghanim/aghanims_room_icon_png.vtex");
+    background-image: url("file://{images}/select_pet.png");
   
-    width: 107px;
-    height: 124px;
+    width: 97px;
+    height: 114px;
   
     vertical-align: top;
   
-    margin-top: -72px;
+    margin-top: -55px;
     margin-left: 24px;
   
     img-shadow: 0 4px 8px 1.5 #000;
 }
+
+.EncounterTypeIconRewardAbility {
+    flow-children: none;
+  
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("file://{images}/select_ability.png");
+  
+    width: 97px;
+    height: 114px;
+  
+    vertical-align: top;
+  
+    margin-top: -55px;
+    margin-left: 24px;
+  
+    img-shadow: 0 4px 8px 1.5 #000;
+}
+
 
 #EncounterRewardParticleLegendary {
     height: 100%;
@@ -112,7 +132,7 @@
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url( "s2r://panorama/images/interface/aghanims_reward_staff_psd.vtex");
+    background-image: url( "s2r://panorama/images/interface/aghanims_blessings_png.vtex");
   
     width: 100%;
     height: 100%;
@@ -129,8 +149,27 @@
 }
 
 #RewardHeader {
+    vertical-align: top;
+    horizontal-align: center;
+    text-transform: uppercase;
+    font-weight: semi-bold;
+    letter-spacing: 1px;
+    font-size: 33px;
+    text-align: center center;
+    transform: translateX(-132px);
 
-    margin: 0px;
+    box-shadow: fill 1px 2px 24px #00000030;
+
+    text-shadow: 0px 3px 4px #000000;
+    color: gradient( linear, 0% 0%, 0% 100%, from( #fff7e8 ), to( #fff7e8 ) );
+    background-color: gradient( linear, 0% 0%, 100% 0%, from( #79570000 ), color-stop (0.3, gray), color-stop (0.5, gray), to ( #FFF26F00 ) );
+    width: 50%;
+    height: 90%;
+
+    margin-top: -20px;
+}
+
+#RewardHeaderAbility {
     vertical-align: top;
     horizontal-align: center;
     text-transform: uppercase;
@@ -146,7 +185,7 @@
     color: gradient( linear, 0% 0%, 0% 100%, from( #fff7e8 ), to( #fff7e8 ) );
     background-color: gradient( linear, 0% 0%, 100% 0%, from( #79570000 ), color-stop (0.1, #2234CE), color-stop (0.77, #2234CE), to ( #FFF26F00 ) );
     width: 50%;
-    height: 100%;
+    height: 90%;
 
     margin-top: -20px;
 }
@@ -162,7 +201,6 @@
     background-image: url( "s2r://panorama/images/interface/aghanims_addition_rewards_bg_psd.vtex");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
     margin-top: 15px;
 }
 
@@ -179,6 +217,49 @@
     background-repeat: no-repeat;
 
     margin-top: 15px;
+}
+
+.FixedRewardsCooldown:hover {
+    brightness: 2;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.FixedRewardsExperience:hover {
+    brightness: 2;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.FixedRewardsAbility1:hover {
+    brightness: 2;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.FixedRewardsAbility2:hover {
+    brightness: 2;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+.FixedRewardsAbility3:hover {
+    brightness: 2;
+
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
 
 .RewardParticleContainer {
@@ -230,35 +311,9 @@
     background-image: none;
   
     margin-left: 12px;
-  
-    brightness: .65;
 
     border: 2px solid #7f7e81;
-    box-shadow: 0 0 12px 0px #7f7e81;
-  
-    animation-duration: .7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-  
-    animation-name: LegendaryPulse;
-
-}
-
-@keyframes 'LegendaryPulse'{
-
-    0%{
-
-  brightness: 1;
-  border: 2px solid #7f7e81;
-  box-shadow: 0 0 12px 0px #132092;
-    }
-    100%{
-
-  brightness: 1.3;
-  border: 2px solid #c6c4ca;
-  box-shadow: 0 0 16px 1px #2234CE;
-    }
+    brightness: 1.5;
 }
 
 .RewardIconElite {

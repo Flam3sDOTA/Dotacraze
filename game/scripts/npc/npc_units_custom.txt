@@ -22,7 +22,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"StatusMana"            		"0"
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
-		"RingRadius"            		"45"
+		"RingRadius"            		"0"
 		"HealthBarOffset"       		"0"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
@@ -31,6 +31,118 @@
 		"AttackDamageMax" 				"0"
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Experience Pet - Rare
+	//============================================================
+	"unit_experience_pet_rare"
+	{	
+		//============================================================
+			"vscripts"         				"ai/experience_pet.lua"
+			"Model"                 		"models/items/courier/onibi_lvl_09/onibi_lvl_09.vmdl" 
+			"ModelScale"               		"1.4"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Experience Pet - Mythical
+	//============================================================
+	"unit_experience_pet_mythical"
+	{	
+		//============================================================
+			"vscripts"         				"ai/experience_pet.lua"
+			"Model"                 		"models/items/courier/onibi_lvl_13/onibi_lvl_13.vmdl"
+			"ModelScale"               		"1.4"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Experience Pet - Legendary
+	//============================================================
+	"unit_experience_pet_legendary"
+	{	
+		//============================================================
+			"vscripts"         				"ai/experience_pet.lua"
+			"Model"                 		"models/items/courier/onibi_lvl_20/onibi_lvl_20.vmdl"
+			"ModelScale"               		"1.4"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"
@@ -58,7 +170,7 @@
 		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"StatusMana"            		"0"
 		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
-		"RingRadius"            		"45"
+		"RingRadius"            		"0"
 		"HealthBarOffset"       		"0"
 		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
 		"AttackAcquisitionRange" 		"0"
@@ -67,6 +179,155 @@
 		"AttackDamageMax" 				"0"
 		"BountyXP"              		"0"
 		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Cooldown Pet - Rare
+	//============================================================
+	"unit_cooldown_pet_rare"
+	{	
+		//============================================================
+			"vscripts"         				"ai/cooldown_pet.lua"
+			"Model"                 		"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl3/courier_ti10_radiant_lvl3.vmdl"
+			"ModelScale"               		"1.1"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Cooldown Pet - Mythical
+	//============================================================
+	"unit_cooldown_pet_mythical"
+	{	
+		//============================================================
+			"vscripts"         				"ai/cooldown_pet.lua"
+			"Model"                 		"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl4/courier_ti10_radiant_lvl4.vmdl"
+			"ModelScale"               		"1.1"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Cooldown Pet - Legendary
+	//============================================================
+	"unit_cooldown_pet_legendary"
+	{	
+		//============================================================
+			"vscripts"         				"ai/cooldown_pet.lua"
+			"Model"                 		"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl"
+			"ModelScale"               		"1.1"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"450"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
+		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"      		"1"
+		"Level" 						"1"
+		"Ability1"						"invulnerable_pet_ability"
+	}
+
+	//============================================================
+	// Aghanim Pet - Ancient
+	//============================================================
+	"unit_aghanim_pet_ancient"
+	{	
+		//============================================================
+			"vscripts"         				"ai/aghanim_pet.lua"
+			"Model"                 		"models/courier/aghanim_courier/aghanim_courier.vmdl"
+			"ModelScale"               		"1.1"
+			
+			"StatusHealth"          		"9999"
+			"ArmorPhysical"         		"9999"
+			"MagicalResistance"     		"9999"
+			"MovementSpeed"         		"400"
+			"BountyGoldMin"         		"0"
+			"BountyGoldMax"         		"0"
+		//============================================================
+		"SoundSet"              		""
+		"CombatClassDefend"     		"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"StatusMana"            		"0"
+		"BoundsHullName"        		"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"            		"0"
+		"HealthBarOffset"       		"0"
+		"AttackCapabilities" 			"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackAcquisitionRange" 		"0"
+		"AttackRange" 					"0"
+		"AttackDamageMin" 				"0"
+		"AttackDamageMax" 				"0"
+		"BountyXP"              		"0"
+		"BaseClass"             		"npc_dota_creature"
+		"TeamName"						"DOTA_TEAM_GOODGUYS"
 		"MovementCapabilities"  		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementTurnRate"      		"1"
 		"Level" 						"1"

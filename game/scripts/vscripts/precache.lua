@@ -26,6 +26,16 @@ g_ParticlePrecache =
 	"particles/dotacraze/crystals/blue/blue_crystal_effect.vpcf",
 	"particles/dotacraze/crystals/purple/purple_crystal_effect.vpcf",
 	"particles/dotacraze/crystals/red/red_crystal_effect.vpcf",
+	"particles/winter_fx/weather_frostivus_snow.vpcf",
+	"particles/econ/courier/courier_onibi/courier_onibi_yellow_lvl20_ambient.vpcf",
+	"particles/econ/courier/courier_onibi/courier_onibi_pink_lvl13_ambient.vpcf",
+	"particles/econ/courier/courier_onibi/courier_onibi_blue_lvl9_ambient.vpcf",
+	"particles/econ/courier/courier_onibi/courier_onibi_green_lvl0_ambient.vpcf",
+	"particles/econ/courier/courier_ti10/courier_ti10_lvl1_ambient.vpcf",
+	"particles/econ/courier/courier_ti10/courier_ti10_lvl3_ambient.vpcf",
+	"particles/econ/courier/courier_ti10/courier_ti10_lvl4_ambient.vpcf",
+	"particles/econ/courier/courier_ti10/courier_ti10_lvl7_ambient.vpcf",
+
 
 	-- Ability Related
 	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit_creep.vpcf",
