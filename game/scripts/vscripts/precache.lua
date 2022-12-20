@@ -35,8 +35,7 @@ g_ParticlePrecache =
 	"particles/econ/courier/courier_ti10/courier_ti10_lvl3_ambient.vpcf",
 	"particles/econ/courier/courier_ti10/courier_ti10_lvl4_ambient.vpcf",
 	"particles/econ/courier/courier_ti10/courier_ti10_lvl7_ambient.vpcf",
-
-
+	
 	-- Ability Related
 	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit_creep.vpcf",
 	"particles/units/heroes/hero_bristleback/bristleback_quill_spray.vpcf",

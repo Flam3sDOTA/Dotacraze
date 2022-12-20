@@ -25,11 +25,7 @@ function dotacraze:OnHeroInGame(hero)
   hero:AddNewModifier(hero, nil, "modifier_frozen", {})
   hero:AddNewModifier(hero, nil, "modifier_auto_cast", {})
 
-  local playerID = hero:GetPlayerID()	
-	PlayerResource:SetCameraTarget(playerID, hero)
-  Timers:CreateTimer(0.1, function()
-    PlayerResource:SetCameraTarget(playerID, hero)
-	end)
+  local playerID = hero:GetPlayerID()
 end
 
 ---------------------------------------------------------------------------
@@ -38,27 +34,22 @@ end
 function dotacraze:OnGameRulesStateChange()
   local nNewState = GameRules:State_Get()
   if nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
-    dotacraze:OnGameInProgress()
 	  Convars:SetInt("dota_max_physical_items_purchase_limit", 9999)
     Convars:SetInt("dota_max_physical_items_drop_limit", 9999)
   end
 end
-
-function dotacraze:OnGameInProgress()
-  -- Start spawning creep waves
-  --StartSpawning() 
-end
-
 
 ---------------------------------------------------------------------------
 -- Event: OnPlayerGainedLevel
 ---------------------------------------------------------------------------
 function dotacraze:OnPlayerGainedLevel(eventInfo)
   local hero = PlayerResource:GetSelectedHeroEntity(eventInfo.player_id)
+  local enemies = FindUnitsInRadius( hero:GetTeamNumber(), hero:GetOrigin(), hero, 99999, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_NONE, FIND_CLOSEST, false )
 
   if eventInfo.level == 2 then
     CustomGameEventManager:Send_ServerToAllClients("player_reached_secondability_level", {})
     hero:AddNewModifier(hero, nil, "modifier_frozen", {})
+    enemies[1]:AddNewModifier(enemies, nil, "modifier_frozen", {})
   end
 
   if eventInfo.level == 5 then
@@ -107,6 +98,7 @@ function CooldownPetEvent(eventSourceIndex, args)
   local cooldown_pet = hero:AddItemByName("item_cooldown_pet_common")
   cooldown_pet:SetOwner(hero)
   hero:RemoveModifierByName("modifier_frozen")
+  StartSpawning()
 end
 
 ---------------------------------------------------------------------------
@@ -118,6 +110,7 @@ function ExperiencePetEvent(eventSourceIndex, args)
   local experience_pet = hero:AddItemByName("item_experience_pet_common")
   experience_pet:SetOwner(hero)
   hero:RemoveModifierByName("modifier_frozen")
+  StartSpawning() 
 end
 
 ---------------------------------------------------------------------------
@@ -126,20 +119,26 @@ end
 function AbilityEvent1(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  local enemies = FindUnitsInRadius( hero:GetTeamNumber(), hero:GetOrigin(), nil, 99999, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD, FIND_CLOSEST, false )
   hero:AddAbility("centaur_warrunner_hoof_stomp_lua")
   hero:RemoveModifierByName("modifier_frozen")
+  enemies[1]:RemoveModifierByName("modifier_frozen")
 end
 
 function AbilityEvent2(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  local enemies = FindUnitsInRadius( hero:GetTeamNumber(), hero:GetOrigin(), nil, 99999, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD, FIND_CLOSEST, false )
   hero:AddAbility("enchantress_natures_attendants_lua")
   hero:RemoveModifierByName("modifier_frozen")
+  enemies[1]:RemoveModifierByName("modifier_frozen")
 end
 
 function AbilityEvent3(eventSourceIndex, args)
   local playerID = args.PlayerID
   local hero = PlayerResource:GetPlayer(playerID):GetAssignedHero()
+  local enemies = FindUnitsInRadius( hero:GetTeamNumber(), hero:GetOrigin(), nil, 99999, DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_ALL, DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD, FIND_CLOSEST, false )
   hero:AddAbility("alchemist_acid_spray_lua")
   hero:RemoveModifierByName("modifier_frozen")
+  enemies[1]:RemoveModifierByName("modifier_frozen")
 end

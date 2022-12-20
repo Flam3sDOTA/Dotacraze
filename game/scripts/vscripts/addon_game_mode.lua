@@ -7,9 +7,9 @@ require("libraries/notifications")
 require("libraries/projectiles")
 require("libraries/animations")
 require("libraries/utility_functions")
+require("waves/wave_controller")
 require("precache")
 require("events")
-
 
 function Precache( context )
 	for _,Item in pairs( g_ItemPrecache ) do
